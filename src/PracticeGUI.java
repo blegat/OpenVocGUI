@@ -11,33 +11,43 @@ public class PracticeGUI extends JPanel{
 	private JLabel lword;
 	private JTextField tf;
 	private JLabel lans;
+	private JButton correct;
+	private JButton next;
+	private JButton showAns;
+	private JButton stuMis;
+
+	private WordSet set;
+	boolean found;
 	
 	//temporaire en attendant la suite du projet
 	private String word = "oui";
 	private String ans = "yes";
 	
 	
-	public PracticeGUI()
+	public PracticeGUI(WordSet set)
 	{
+		this.set = set;
 		Box bAlot = Box.createVerticalBox();
 		Box bCor = Box.createVerticalBox();
 		Box bSw = Box.createVerticalBox();
 	
-		lword = new JLabel(word);
+		lword = new JLabel(set.next());
 		lcorrect = new JLabel();
 		lans = new JLabel();
 		tf = new JTextField();
 		
-		JButton correct = new JButton("Correct");
+		correct = new JButton("Correct");
 			correct.addActionListener(new correctListener());
-		JButton next = new JButton("Next");
+		next = new JButton("Next");
 			next.addActionListener(new nextListener());
-		JButton showAns = new JButton ("Show answer");
+			next.setEnabled(false);
+		showAns = new JButton ("Show answer");
 			showAns.addActionListener(new showAnsListener());
 		JButton sw = new JButton("Switch language");
 			sw.addActionListener(new switchListener());
-		JButton stuMis = new JButton ("Stupid Mistake");
+		stuMis = new JButton ("Stupid Mistake");
 			stuMis.addActionListener(new stuMis());
+			stuMis.setEnabled(false);
 			
 		bAlot.add(lword);
 		bAlot.add(tf);
@@ -65,7 +75,16 @@ public class PracticeGUI extends JPanel{
 		
 		public void actionPerformed (ActionEvent e)
 		{
-			lcorrect.setText(new Boolean(ans.equals(tf.getText())).toString());
+			if (found = set.check(tf.getText())) { // Il y a 1 seul =, c'est fait expres
+				lcorrect.setText("Correct");
+			} else {
+				lcorrect.setText("Wrong");
+				lans.setText(set.answer());
+				showAns.setEnabled(false);
+				stuMis.setEnabled(true);
+			}
+			next.setEnabled(true);
+			correct.setEnabled(false);
 		}
 			
 	}
@@ -74,9 +93,15 @@ public class PracticeGUI extends JPanel{
 	{
 		public void actionPerformed (ActionEvent e)
 		{
-				lword.setText("en attendant la suite");		
-				lcorrect.setText(" ");
-				lans.setText("");
+			lcorrect.setText("");
+			lans.setText("");
+			tf.setText("");
+			lword.setText(set.next());
+			next.setEnabled(false);
+			stuMis.setEnabled(false);
+			found = false;
+			correct.setEnabled(true);
+			showAns.setEnabled(true);
 		}
 		
 	}
@@ -84,7 +109,12 @@ public class PracticeGUI extends JPanel{
 	{
 		public void actionPerformed (ActionEvent e)
 		{
-			lans.setText(ans);
+			lans.setText(set.answer());
+			next.setEnabled(true);
+			if (!found) {
+				stuMis.setEnabled(true);
+			}
+			showAns.setEnabled(false);
 		}
 		
 	}
@@ -93,13 +123,14 @@ public class PracticeGUI extends JPanel{
 		public void actionPerformed (ActionEvent e)
 		{
 			lcorrect.setText("ok but be careful");
+			stuMis.setEnabled(false);
 		}
 	}
 	private class switchListener implements ActionListener
 	{
 		public void actionPerformed (ActionEvent e)
 		{
-			lcorrect.setText("switcher = mauvaise idee");
+			lcorrect.setText("ru fckg kidding me? switcher = mauvaise idee");
 		}
 			
 	}

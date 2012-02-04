@@ -15,11 +15,12 @@ public class MenuGUI {
 	public MenuGUI() 
 	
 	{
+		WordSet set = new WordSet("set.ocv");
 		JFrame f = new JFrame ("OpenVoc");
 		f.setPreferredSize(new Dimension(600, 300));
 		JTabbedPane tp = new JTabbedPane();
 		tp.addTab("Welcome", tux("tux_welcome.gif"), new WelcomeGUI(), "still does nothing");
-		tp.addTab("Practice", tux("tux_big.png"), new PracticeGUI(), "in progress");
+		tp.addTab("Practice", tux("tux_big.png"), new PracticeGUI(set), "in progress");
 		tp.addTab("Practice Anonymous", tux("tux_anonymous.png"), new PracticeAnonymousGUI(), "what did you think ? ");
 		tp.addTab("Test", tux("tux_teacher.png"), new TestGUI(), "u're sure not ready");
 		tp.addTab("Add", tux("tux_atlas.png"), new AddGUI(), "does nothing yet");

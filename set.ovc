@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_147-icedtea" class="java.beans.XMLDecoder">
+ <object class="WordSet">
+  <void property="words">
+   <array class="Element" length="8">
+    <void index="0">
+     <object class="Element">
+      <void id="TranslationArray0" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>grass</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>herbe</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray0"/>
+      </void>
+     </object>
+    </void>
+    <void index="1">
+     <object class="Element">
+      <void id="TranslationArray1" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>ball</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>ballon</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray1"/>
+      </void>
+     </object>
+    </void>
+    <void index="2">
+     <object class="Element">
+      <void id="TranslationArray2" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>tree</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>arbre</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray2"/>
+      </void>
+     </object>
+    </void>
+    <void index="3">
+     <object class="Element">
+      <void id="TranslationArray3" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>three</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>trois</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray3"/>
+      </void>
+     </object>
+    </void>
+    <void index="4">
+     <object class="Element">
+      <void id="TranslationArray4" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>bed</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>lit</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray4"/>
+      </void>
+     </object>
+    </void>
+    <void index="5">
+     <object class="Element">
+      <void id="TranslationArray5" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>browser</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>navigateur</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray5"/>
+      </void>
+     </object>
+    </void>
+    <void index="6">
+     <object class="Element">
+      <void id="TranslationArray6" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>hour</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>heure</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray6"/>
+      </void>
+     </object>
+    </void>
+    <void index="7">
+     <object class="Element">
+      <void id="TranslationArray7" property="translations">
+       <void index="0">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language"/>
+         </void>
+         <void property="word">
+          <string>trash</string>
+         </void>
+        </object>
+       </void>
+       <void index="1">
+        <object class="Translation">
+         <void property="language">
+          <object class="Language">
+           <void property="id">
+            <string>fr</string>
+           </void>
+          </object>
+         </void>
+         <void property="word">
+          <string>poubelle</string>
+         </void>
+        </object>
+       </void>
+      </void>
+      <void property="translations">
+       <object idref="TranslationArray7"/>
+      </void>
+     </object>
+    </void>
+   </array>
+  </void>
+ </object>
+</java>
